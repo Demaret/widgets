@@ -2,159 +2,137 @@
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
   {
-  "colorTheme": "dark",
-  "dateRange": "12M",
-  "showChart": true,
-  "locale": "en",
   "width": "100%",
   "height": "100%",
-  "largeChartUrl": "",
-  "isTransparent": false,
-  "showSymbolLogo": true,
-  "showFloatingTooltip": false,
-  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-  "gridLineColor": "rgba(42, 46, 57, 0)",
-  "scaleFontColor": "rgba(209, 212, 220, 1)",
-  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
-  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
-  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
-  "tabs": [
+  "symbolsGroups": [
     {
-      "title": "Indices",
+      "name": "Indices",
+      "originalName": "Indices",
       "symbols": [
         {
-          "s": "FOREXCOM:SPXUSD",
-          "d": "S&P 500 Index"
+          "name": "FOREXCOM:SPXUSD",
+          "displayName": "S&P 500 Index"
         },
         {
-          "s": "FOREXCOM:NSXUSD",
-          "d": "US 100 Cash CFD"
+          "name": "FOREXCOM:NSXUSD",
+          "displayName": "US 100 Cash CFD"
         },
         {
-          "s": "FOREXCOM:DJI",
-          "d": "Dow Jones Industrial Average Index"
+          "name": "FOREXCOM:DJI",
+          "displayName": "Dow Jones Industrial Average Index"
         },
         {
-          "s": "INDEX:NKY",
-          "d": "Japan 225"
+          "name": "INDEX:NKY",
+          "displayName": "Japan 225"
         },
         {
-          "s": "INDEX:DEU40",
-          "d": "DAX Index"
+          "name": "INDEX:DEU40",
+          "displayName": "DAX Index"
         },
         {
-          "s": "FOREXCOM:UKXGBP",
-          "d": "FTSE 100 Index"
+          "name": "FOREXCOM:UKXGBP",
+          "displayName": "FTSE 100 Index"
         }
-      ],
-      "originalTitle": "Indices"
+      ]
     },
     {
-      "title": "Futures",
+      "name": "Futures",
+      "originalName": "Futures",
       "symbols": [
         {
-          "s": "CME_MINI:ES1!",
-          "d": "S&P 500"
+          "name": "CME_MINI:ES1!",
+          "displayName": "S&P 500"
         },
         {
-          "s": "CME:6E1!",
-          "d": "Euro"
+          "name": "CME:6E1!",
+          "displayName": "Euro"
         },
         {
-          "s": "COMEX:GC1!",
-          "d": "Gold"
+          "name": "COMEX:GC1!",
+          "displayName": "Gold"
         },
         {
-          "s": "NYMEX:CL1!",
-          "d": "WTI Crude Oil"
+          "name": "NYMEX:CL1!",
+          "displayName": "WTI Crude Oil"
         },
         {
-          "s": "NYMEX:NG1!",
-          "d": "Gas"
+          "name": "NYMEX:NG1!",
+          "displayName": "Gas"
         },
         {
-          "s": "CBOT:ZC1!",
-          "d": "Corn"
+          "name": "CBOT:ZC1!",
+          "displayName": "Corn"
         }
-      ],
-      "originalTitle": "Futures"
+      ]
     },
     {
-      "title": "Bonds",
+      "name": "Bonds",
+      "originalName": "Bonds",
       "symbols": [
         {
-          "s": "CBOT:ZB1!",
-          "d": "T-Bond"
+          "name": "CBOT:ZB1!",
+          "displayName": "T-Bond"
         },
         {
-          "s": "CBOT:UB1!",
-          "d": "Ultra T-Bond"
+          "name": "CBOT:UB1!",
+          "displayName": "Ultra T-Bond"
         },
         {
-          "s": "EUREX:FGBL1!",
-          "d": "Euro Bund"
+          "name": "EUREX:FGBL1!",
+          "displayName": "Euro Bund"
         },
         {
-          "s": "EUREX:FBTP1!",
-          "d": "Euro BTP"
+          "name": "EUREX:FBTP1!",
+          "displayName": "Euro BTP"
         },
         {
-          "s": "EUREX:FGBM1!",
-          "d": "Euro BOBL"
+          "name": "EUREX:FGBM1!",
+          "displayName": "Euro BOBL"
+        },
+        {
+          "name": "PEPPERSTONE:USDX"
+        },
+        {
+          "name": "FRED:T10Y2Y"
         }
-      ],
-      "originalTitle": "Bonds"
+      ]
     },
     {
-      "title": "Forex",
+      "name": "Forex",
+      "originalName": "Forex",
       "symbols": [
         {
-          "s": "FX:EURUSD",
-          "d": "EUR to USD"
+          "name": "FX:EURUSD",
+          "displayName": "EUR to USD"
         },
         {
-          "s": "FX:GBPUSD",
-          "d": "GBP to USD"
+          "name": "FX:GBPUSD",
+          "displayName": "GBP to USD"
         },
         {
-          "s": "FX:USDJPY",
-          "d": "USD to JPY"
+          "name": "FX:USDJPY",
+          "displayName": "USD to JPY"
         },
         {
-          "s": "FX:USDCHF",
-          "d": "USD to CHF"
+          "name": "FX:USDCHF",
+          "displayName": "USD to CHF"
         },
         {
-          "s": "FX:AUDUSD",
-          "d": "AUD to USD"
+          "name": "FX_IDC:CNYUSD"
         },
         {
-          "s": "FX:USDCAD",
-          "d": "USD to CAD"
-        }
-      ],
-      "originalTitle": "Forex"
-    },
-    {
-      "title": "index",
-      "symbols": [
-        {
-          "s": "FRED:FEDFUNDS"
-        },
-        {
-          "s": "FRED:SP500"
-        },
-        {
-          "s": "FRED:T10Y2Y"
+          "name": "FX_IDC:USDCNY"
         }
       ]
     }
-  ]
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "colorTheme": "light",
+  "locale": "en",
+  "backgroundColor": "#ffffff"
 }
   </script>
 </div>
